@@ -295,6 +295,7 @@
     padding: 12px 24px;
     text-align: left;
     border-radius: 12px;
+    width: 100%;
 }
 .lineheihght{
     line-height: 1.7;
@@ -517,6 +518,7 @@ color: white;
     height: auto;
     width: 100%;
  }
+ 
 }
 @media(max-width:768px){
 
@@ -536,6 +538,7 @@ color: white;
     align-items: flex-start;
     justify-content: center;
     margin-top: 4%;
+    max-width: 100%;
 }
 .inp{
     width: 100%;
