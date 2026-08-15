@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
      font-family: 'Ubuntu', sans-serif;
-    
+    user-select: none;
 }
 html{
     scroll-behavior: smooth;
 }
 :root{
-    --main-color:#7F00FF
+    --main-color:#7F00FF;
 }
 
 body {
@@ -376,4 +376,19 @@ button:hover{
     font-size:clamp(2.5rem,7vw,4rem);
 }
    
+}
+.card-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards-c{
+    align-items: center;
+    justify-content: flex-start;
+}
+.width-40{
+    width: 35vw;
+}
+.m-top-high{
+    margin-top: 4%;
 }
