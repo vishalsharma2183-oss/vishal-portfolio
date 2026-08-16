@@ -9,5 +9,33 @@ const observer = new IntersectionObserver((entries) => {
         bars.forEach(bar => bar.classList.add("animate"));
     }
 });
+const anchors=document.querySelectorAll(".links a")
 
 observer.observe(document.querySelector(".skills"));
+const hamburger=document.querySelector(".hamburger")
+const hide=document.querySelector(".hidelinks")
+hamburger.addEventListener("click",()=>{
+    hide.classList.toggle("hidelinks")
+       if(hide.classList.contains("hidelinks"))
+    {
+        hamburger.innerHTML=`<img src="hamburger.svg" alt="">`
+    }
+    else{
+        hamburger.innerHTML="X"
+        hamburger.style.fontSize="28px"
+    }
+ 
+
+})
+anchors.forEach(a=>{
+    a.addEventListener("click",()=>{
+        hide.classList.toggle("hidelinks");
+           if(hide.classList.contains("hidelinks"))
+    {
+        hamburger.innerHTML=`<img src="hamburger.svg" alt="">`
+    }
+    else{
+        hamburger.innerHTML="X"
+    }
+    })
+})
