@@ -345,8 +345,22 @@ button:hover{
   .container{
     width: 100vw;
    }
-   .links{
+  .hidelinks{
     display: none;
+
+  }
+  .links{
+    flex-direction: column;
+    position: absolute ;
+    top: 10vh;
+    right:2vw;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: white;
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+   .hamburger{
+    display: block;
    }
    .projects{
     padding: 4% 8%;
@@ -416,5 +430,5 @@ button:hover{
 }
 a{
     text-decoration: none;
-    
+
 }
