@@ -1,7 +1,3 @@
-const mode=document.querySelector(".mode")
-mode.addEventListener("click",()=>{
-    
-})
 const bars = document.querySelectorAll(".progress");
 
 const observer = new IntersectionObserver((entries) => {
@@ -38,4 +34,26 @@ anchors.forEach(a=>{
         hamburger.innerHTML="X"
     }
     })
+})
+const invert=document.querySelector(".inverter")
+const  mode=document.querySelector(".mode")
+if(localStorage.getItem("theme")==="dark-theme")
+{
+    document.body.classList.add("dark-theme");
+     mode.textContent="☀️"
+}
+
+mode.addEventListener("click",()=>{
+   document.body.classList.toggle("dark-theme");
+   invert.classList.toggle("invert")
+   if(document.body.classList.contains("dark-theme"))
+   {
+    mode.textContent="☀️"
+      localStorage.setItem("theme","dark-theme")
+   }
+   else{
+    mode.textContent="🌙"
+    localStorage.setItem("theme","light")
+   }
+ 
 })
