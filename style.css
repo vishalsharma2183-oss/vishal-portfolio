@@ -14,6 +14,7 @@
     --headings-color: #000000;
     --cards-color: rgb(245, 241, 241);
     --navbar-color: rgba(255, 255, 255, 0.896);
+    --bg:#f2f2f26a;
 }
 .dark-theme {
     --text-color: #ffffff;
@@ -22,6 +23,7 @@
     --headings-color: #ffffff;
     --navbar-color: rgba(0, 0, 0, 0.896);
     --cards-color: #161b22;
+     --bg:#0c01016a;
 }
 html{
     scroll-behavior: smooth;
@@ -203,8 +205,8 @@ button:hover{
 .about{
     padding: 20px 8%;
 }
-.about-p{
-    width: 600px;
+.about-p {
+    width: min(600px, 100%);
 }
 .top-about{
     display: flex;
@@ -382,14 +384,16 @@ button:hover{
     flex-direction: column;
     position: absolute ;
     top: 10vh;
-    right:2vw;
+    right:5vw;
     background-color: var(--bg-color);
     z-index: 1000;
     box-shadow: white;
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: var(--bg);
   }
    .hamburger{
     display: block;
+    font-size: 1.5rem;
+    
    }
    .projects{
     padding: 4% 8%;
