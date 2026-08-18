@@ -14,11 +14,11 @@ hamburger.addEventListener("click",()=>{
     hide.classList.toggle("hidelinks")
        if(hide.classList.contains("hidelinks"))
     {
-        hamburger.innerHTML=`<img src="hamburger.svg" alt="">`
+        hamburger.innerHTML=`<img  src="hamburger.svg" alt="">`
     }
     else{
-        hamburger.innerHTML="X"
-        hamburger.style.fontSize="28px"
+       hamburger.innerHTML=`<img  src="cross.svg" alt="">`
+        
     }
  
 
@@ -40,6 +40,7 @@ const  mode=document.querySelector(".mode")
 if(localStorage.getItem("theme")==="dark-theme")
 {
     document.body.classList.add("dark-theme");
+    invert.classList.add("invert")
      mode.textContent="☀️"
 }
 
